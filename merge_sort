@@ -1,0 +1,25 @@
+def merge_sort(a,b):
+    smorted=[]
+    i=j=0
+    a=sorted(arr[:(len(arr)//2)])
+    b=sorted(arr[(len(arr)//2):])
+    while i<len(a) and j<len(b):
+        if a[i]<=b[j]:
+            smorted.append(a[i])
+            i+=1
+        else:
+            smorted.append(b[j])
+            j+=1
+    while i <len(a):
+        smorted.append(a[i])
+        i+=1
+    while j< len(b):
+        smorted.append(b[j])
+        j+=1
+    return print(smorted)
+
+
+if __name__=='__main__':
+    arr=([2,3,5,3,1])
+    merge_sort(a,b)
+    
